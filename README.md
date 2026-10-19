@@ -1,20 +1,23 @@
-# Projektin nimi
+# ToiveOstokset - Toivelistasovellus
 
-**Tekijä(t):** Kirjoita tähän oma nimesi / tekijöiden nimet
+**Tekijä(t):** Nita Lallimo
 
 ## Projektisuunnitelma
 
 ### Projektin idea
 
-Kuvaile lyhyesti, mitä sovelluksesi tekee ja kenelle se on tarkoitettu.
+ToiveOstokset on verkkosovellus, jossa käyttäjä voi luoda ostoslistan perustuen omaan toivelistaan. Listalle voi lisätä tuotteita myöhempää varten, niitä voi tarkastella sekä hallita. 
+
+Kun käyttäjä on ostanut jonkin tuotteen toivelistalta, hän voi merkitä sen ostetuksi. Sovelluksen tarkoitus on helpottaa tarvittavien ostosten listaamista samaan paikkaan.
 
 ### Suunnitellut toiminnot
 
 Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
-- Toiminto 1
-- Toiminto 2
-- Toiminto 3
+- Tuotteen lisääminen
+- Tuotteen merkitseminen ostetuksi
+- Tietojen tallentaminen
+- Toivelistan tarkastelu / hallinta (poistaminen)
 
 ### Rautalankamalli / luonnos
 
@@ -22,43 +25,45 @@ Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovell
 
 Esimerkki kuvan lisäämisestä:
 
-![Rautalankamalli](img/wireframe.png)
+![Rautalankamalli] LAITA TÄNNE IMG
 
 ## Verkkolinkit
 
 - **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
+- **GitHub-repositorio:** https://github.com/nipsu12/Project_1_DOM_skripting
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
 ## Tietoja sovelluksesta
 
-**[Projektin nimi]** on verkkosovellus, joka ...
+**[ToiveOstokset]** on verkkosovellus, jossa käyttäjä voi hallita tuotteita, joita haluaa ostaa myöhemmin.
 
-Kuvaile lyhyesti sovelluksen tarkoitus ja tärkeimmät toiminnot.
+Käyttäjä voi lisätä uusia tuotteita, merkitä tuotteita ostetuksi ja poistaa tuotteita. Sovellus toimii selaimessa.
 
 ## Teknologiat
 
-Kuvaile, mitä teknologioita käytit ja mikä niiden rooli oli projektissasi.
 
-- HTML – sivun rakenne
-- CSS – ulkoasu ja asettelu
-- JavaScript – toiminnallisuus, DOM-skriptaus ja lomakkeiden validointi
-- localStorage – tietojen tallentaminen selaimeen, jos käytit sitä
+- HTML: Rakenteen luominen - otsikot, teksikentät, painikkeet ja toivelistan luettelo
+- CSS: Ulkoasun suunnittelu - värit, fontit, asettelu ja muotoilu
+- JavaScript: Tuotteiden lisäys, poisto ja ostetuksi merkitseminen
+- DOM-skriptaus: HTML-elementtien haku, luonti ja muokkaus
+- localStorage: Tietojen tallentaminen selaimeen, jotta tiedot säilyvät
 
 ## Sovelluksen käyttö
 
-Kirjoita lyhyet käyttöohjeet sovellukselle.
+Lyhyet käyttöohjeet sovellukselle.
 
 1. Avaa julkaistu sovellus yllä olevasta linkistä.
-2. Täytä lomakkeen kentät.
-3. Lisää, muokkaa, poista tai merkitse kohteita tehdyiksi.
-4. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa, jos käytit localStoragea.
+2. Syötä tuotteen nimi tekstikenttään.
+3. Paina "Lisää" sekä "Tallenna muutokset" painikkeita.
+4. Poista tai merkitse tuotteita ostetuksi.
+5. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
-1. Kloonaa tai lataa tämä repositorio omalle koneellesi.
+1. Kloonaa tai lataa tämä Github-repositorio omalle koneellesi.
 2. Avaa projektikansio.
 3. Avaa `index.html` selaimessa.
+4. Kokeile sovelluksen toiminnallisuutta.
 
 ## Kuvakaappaukset
 
@@ -74,14 +79,6 @@ Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita
 
 Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
 
-## Työn jakautuminen
-
-*Täytä tämä osio vain, jos teit projektin parityönä.*
-
-Kuvaile, miten työ jakautui ja miten yhteistyö sujui.
-
-- Tekijä 1: ...
-- Tekijä 2: ...
 
 ## Oma arvio ja oppimisen reflektointi
 
@@ -102,12 +99,10 @@ Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse 
 
 - [Lähteen tai tutoriaalin nimi](https://example.com/)
 - [Kuvalähde](https://example.com/)
-- Käytetty tekoälytyökalu: ...
-  - Miten työkalua käytettiin: ...
+- Käytetty tekoälytyökalu: Lucid AI
+  - Miten työkalua käytettiin: Rautalankamallin luomisessa käytetty Lucid Chartin omaa Lucid AI:ta apuna.
+-
 
   ## Lisenssi
 
 Tämä projekti on lisensoitu MIT-lisenssillä.
-
-Lisätietoa lisenssin lisäämisestä GitHub-projektiin:
-https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository

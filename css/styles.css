@@ -1,0 +1,214 @@
+/* Perusasetukset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Didot, 'Bodoni MT', serif;
+}
+
+body {
+    background-color: #cdfdff;
+    display: flex;
+    justify-content: center; /* Sovelluksen keskitys vaakasuunnassa */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #000000;
+}
+
+/* Pääkontti */
+.app-container {
+    width: 100%;
+    max-width: 800px; /* Suurennettu leveys */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Otsikkolaatikko */
+.header-box {
+    border: 2px solid #000000;
+    background-color: #ffdee8;
+    padding: 24px 28px;
+    border-radius: 6px;
+}
+
+.header-box h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.header-box p {
+    font-size: 20px;
+    color: #1b0000d4;
+}
+
+/* Syötekenttä ja painikkeet */
+.input-section {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 14px 18px;
+    font-size: 20px; /* Suurennettu tekstiä */
+    border: 2px solid #1b0000d4;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Yleiset painiketyylit */
+.btn {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 16px; /* Pyöristetyt kulmat kuten hahmotelmassasi */
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn-add {
+    background-color: #ffd6d6; /* Vaaleanpunainen / persikka hahmotelmasta */
+    color: #000000;
+}
+
+.btn-save {
+    background-color: #ffb9df;
+    color: #000000;
+}
+
+/* Toivelistalaatikko */
+.wishlist-box {
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 6px;
+    min-height: 300px;
+}
+
+.wishlist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Yksi lista-alkio */
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Iso valintaruutu (checkbox) */
+.item-left input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    accent-color: #333;
+}
+
+.item-text {
+    font-size: 22px; /* Iso ja selkeä teksti */
+    word-break: break-word;
+}
+
+.item-text.completed {
+    text-decoration: line-through;
+    color: #666666;
+}
+
+/* Lista-alkion kaksoispainike (Delete selected | Clear bought) */
+.item-buttons {
+    display: flex;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.btn-action {
+    padding: 12px 18px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffd7ec;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-action.btn-delete-selected {
+    border-right: 2px solid #000000;
+}
+
+.btn-action.btn-clear-bought {
+    background-color: #ffc6dc;
+    color: #000000;
+}
+
+.btn-action:hover {
+    opacity: 0.8;
+}
+
+/* Toast-ilmoitus */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.toast.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsiivisuus pienemmille näytöille (Mobiili) */
+@media (max-width: 700px) {
+    .input-section {
+        flex-direction: column;
+    }
+    
+    .input-section input, 
+    .btn {
+        width: 100%;
+    }
+
+    .wishlist-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-action {
+        flex: 1;
+        text-align: center;
+    }
+}
