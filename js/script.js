@@ -1,24 +1,24 @@
-// Muuttujat DOM-elementeille HTML:n ID-tunnisteiden mukaan
+// Muuttujat DOM-elementeille
 const productInput = document.getElementById('product-input');
 const addBtn = document.getElementById('add-btn');
 const saveBtn = document.getElementById('save-btn');
 const wishlist = document.getElementById('wishlist');
 
-// Uuden tuotteen lisääminen listaan
+// Uuden tuotteen lisääminen
 addBtn.addEventListener('click', function () {
     const text = productInput.value.trim();
 
-    // Tarkistetaan, että kenttä ei ole tyhjä (kuten kurssin lomakkeessa)
+    // Kenttä uudelle tuotteelle
     if (text === '') {
-        alert('Kirjoita tuotteen nimi!');
+        alert('Kirjoita tuotteen nimi...');
         return;
     }
 
-    // 1. Luodaan uusi li-elementti
+    // Syötetty tuote
     const li = document.createElement('li');
     li.className = 'wishlist-item';
 
-    // 2. Luodaan vasen puoli (checkbox ja tekstikenttä)
+    // checkbox ja tuotteen nimi
     const itemLeft = document.createElement('div');
     itemLeft.className = 'item-left';
 
@@ -29,7 +29,7 @@ addBtn.addEventListener('click', function () {
     span.className = 'item-text';
     span.textContent = text;
 
-    // Checkboxin toiminnallisuus (yliviivaus kun valittu)
+    // Tuotteen yliviivaus, kun checkbox on valittu
     checkbox.addEventListener('change', function () {
         if (checkbox.checked) {
             span.classList.add('completed');
@@ -40,11 +40,11 @@ addBtn.addEventListener('click', function () {
 
     itemLeft.append(checkbox, span);
 
-    // 3. Luodaan oikea puoli (napit)
+    // Painikkeet
     const itemButtons = document.createElement('div');
     itemButtons.className = 'item-buttons';
 
-    // Poista kohde -nappi
+    // Poista kohde -painike
     const deleteBtn = document.createElement('button');
     deleteBtn.className = 'btn-action btn-delete-selected';
     deleteBtn.textContent = 'Poista kohde';
@@ -53,10 +53,10 @@ addBtn.addEventListener('click', function () {
         li.remove(); // Poistaa tämän kyseisen rivin suoraan listasta
     });
 
-    // Tyhjennä kaikki ostetut -nappi (tässä esimerkissä poistaa kyseisen, jos halutaan pitää rakenteet simppelinä)
+    // Tyhjennä valitut -painike
     const clearBoughtBtn = document.createElement('button');
     clearBoughtBtn.className = 'btn-action btn-clear-bought';
-    clearBoughtBtn.textContent = 'Tyhjennä';
+    clearBoughtBtn.textContent = 'Poista valitut';
 
     clearBoughtBtn.addEventListener('click', function () {
         if (checkbox.checked) {
@@ -68,17 +68,17 @@ addBtn.addEventListener('click', function () {
 
     itemButtons.append(deleteBtn, clearBoughtBtn);
 
-    // 4. Yhdistetään kaikki osat li-elementtiin
+    // lisätään ylemmät laatikkoon
     li.append(itemLeft, itemButtons);
 
-    // 5. Lisätään valmis li-elementti wishlist-listaan
+
     wishlist.append(li);
 
-    // Tyhjennetään syötekenttä
+    // syötekentän tyhjennys
     productInput.value = '';
 });
 
-// Enter-näppäimen tuki lisäykselle
+// enter-näppäin ominaisuus
 productInput.value = '';
 productInput.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
@@ -86,7 +86,7 @@ productInput.addEventListener('keypress', function (e) {
     }
 });
 
-// Tallenna-painike (kurssin tyyliin tehty ilmoitus tai simulaatio, koska muistia ei käytetä)
+// Tallennettu -ilmoitus
 saveBtn.addEventListener('click', function () {
     alert('Muutokset tallennettu!');
 });
