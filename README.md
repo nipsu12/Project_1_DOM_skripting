@@ -91,8 +91,6 @@ Pohdi työtäsi ja oppimisprosessiasi.
 
 Suurimpana lähteenä projektissa on toiminut aiemmin kurssilla esitellyt koodit, joita on myös hyödynnetty työpajatehtävien tekemisessä. 
 
-- [Lähteen tai tutoriaalin nimi](https://example.com/)
-- [Kuvalähde](https://example.com/)
 - [Programming knowledge: How to use localStorage in JavaScript] (https://www.youtube.com/watch?v=j-BsQhDsx24)
 - Käytetty tekoälytyökalu: Gemini
   - Miten työkalua käytettiin: Gemini tekoälyä on käytetty projektin virheiden ratkaisemisessa sekä html ja script.js tietojen vastaavuuden tarkastamisessa.
