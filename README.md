@@ -31,7 +31,7 @@ Esimerkki kuvan lisäämisestä:
 
 - **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://nipsu12.github.io/Project_1_DOM_skripting/)
 - **GitHub-repositorio:** https://github.com/nipsu12/Project_1_DOM_skripting
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **Projektin videoesittely:** [Lisää tähän videon osoite](https://youtu.be/bkhx1NWZ6L4)
 
 ## Tietoja sovelluksesta
 
