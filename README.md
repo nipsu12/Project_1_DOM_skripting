@@ -46,7 +46,6 @@ Käyttäjä voi lisätä uusia tuotteita, merkitä tuotteita ostetuksi ja poista
 - CSS: Ulkoasun suunnittelu - värit, fontit, asettelu ja muotoilu
 - JavaScript: Tuotteiden lisäys, poisto ja ostetuksi merkitseminen
 - DOM-skriptaus: HTML-elementtien haku, luonti ja muokkaus
-- localStorage: Tietojen tallentaminen selaimeen, jotta tiedot säilyvät
 
 ## Sovelluksen käyttö
 
@@ -56,8 +55,6 @@ Lyhyet käyttöohjeet sovellukselle.
 2. Syötä tuotteen nimi tekstikenttään.
 3. Paina "Lisää" sekä "Tallenna muutokset" painikkeita.
 4. Poista tai merkitse tuotteita ostetuksi.
-5. Tallenna muutokset ennen sivun päivittämistä.
-6. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -87,7 +84,7 @@ Pohdi työtäsi ja oppimisprosessiasi.
 - Haastavinta oli saada sivu responsiviisuden lisäksi keskittymään keskelle näyttöä suurella näytöllä (esim. tietokone).
 - Jos aikaa olisi enemmän, parantaisin verkkosovellusta esimerkiksi lisäämällä kirjautumisvaihtoehdon tai useampia TODO-listoja erilaisten kategorioiden mukaisesti.
 - Tässä projektissa opin HTML:stä sen, ettei siellä tarvitse olla kaikki toiminnallisuudet vaan niitä voi suorittaa script.js:stä. DOM-skriptaus on minulle täysin uusi väline joten olen oppinut paljon elementtien sekä tyylien muokkaamisesta sen avulla.
-- Haluaisin ymmärtää JavaScriptiä vielä paremmin, jotta voisin käyttää sitä yhtä sujuvasti kuin esimerkiksi Python ohjelmointikieltä.
+- Haluaisin ymmärtää JavaScriptiä vielä paremmin, jotta voisin käyttää sitä yhtä sujuvasti kuin esimerkiksi Python ohjelmointikieltä. Myös localStoragen käyttö jäi projektin osalta kesken.
 - Oma arvio projektista: **9/10 pistettä**
 
 ## Lähteet ja kiitokset
