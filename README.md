@@ -29,7 +29,7 @@ Esimerkki kuvan lisäämisestä:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
+- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://nipsu12.github.io/Project_1_DOM_skripting/)
 - **GitHub-repositorio:** https://github.com/nipsu12/Project_1_DOM_skripting
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
@@ -96,6 +96,7 @@ Suurimpana lähteenä projektissa on toiminut aiemmin kurssilla esitellyt koodit
 
 - [Lähteen tai tutoriaalin nimi](https://example.com/)
 - [Kuvalähde](https://example.com/)
+- [Programming knowledge: How to use localStorage in JavaScript] (https://www.youtube.com/watch?v=j-BsQhDsx24)
 - Käytetty tekoälytyökalu: Gemini
   - Miten työkalua käytettiin: Gemini tekoälyä on käytetty projektin virheiden ratkaisemisessa sekä html ja script.js tietojen vastaavuuden tarkastamisessa.
 - Käytetty tekoälytyökalu: Lucid AI
