@@ -25,7 +25,7 @@ Lisää tähän kuva käsin piirtämästäsi tai digitaalisesti tehdystä sovell
 
 Esimerkki kuvan lisäämisestä:
 
-![Rautalankamalli] LAITA TÄNNE IMG
+![Rautalankamalli] (img/rautalanka.png)
 
 ## Verkkolinkit
 
@@ -56,7 +56,8 @@ Lyhyet käyttöohjeet sovellukselle.
 2. Syötä tuotteen nimi tekstikenttään.
 3. Paina "Lisää" sekä "Tallenna muutokset" painikkeita.
 4. Poista tai merkitse tuotteita ostetuksi.
-5. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa.
+5. Tallenna muutokset ennen sivun päivittämistä.
+6. Päivitä sivu ja tarkista, säilyvätkö tiedot selaimessa.
 
 ## Sovelluksen käynnistäminen paikallisesti
 
@@ -71,38 +72,35 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksestasi.
 
 Esimerkki kuvan lisäämisestä:
 
-![Kuvakaappaus sovelluksesta](img/screenshot.png)
+![Kuvakaappaus sovelluksesta](img/lopputulos.png)
 
 ## Tunnetut virheet / puutteet
 
-Kerro, jos sovelluksessa on tunnettuja virheitä, puuttuvia toimintoja tai muita rajoituksia.
-
-Jos tunnettuja virheitä ei ole, kirjoita: **Ei tunnettuja virheitä.**
+**Ei tunnettuja virheitä.**
 
 
 ## Oma arvio ja oppimisen reflektointi
 
 Pohdi työtäsi ja oppimisprosessiasi.
 
-- Missä onnistuin?
-- Mikä oli haastavaa?
-- Mitä parantaisin, jos aikaa olisi enemmän?
-- Mitä opin HTML:stä, CSS:stä, JavaScriptistä ja DOM-skriptauksesta?
-- Mikä jäi epäselväksi tai mistä haluaisin oppia lisää?
-- Oma arvio projektista: **xx/10 pistettä**
+- Onnistuin projektin rakenteen loogisessa luomisessa. Aloitin html-tiedoston luomisella, seuraavaksi tein script.js-tiedoston ja viimeisenä sommittelin sivustoa enemmän styles.css tiedostossa.
+- Haastavinta oli saada sivu responsiviisuden lisäksi keskittymään keskelle näyttöä suurella näytöllä (esim. tietokone).
+- Jos aikaa olisi enemmän, parantaisin verkkosovellusta esimerkiksi lisäämällä kirjautumisvaihtoehdon tai useampia TODO-listoja erilaisten kategorioiden mukaisesti.
+- Tässä projektissa opin HTML:stä sen, ettei siellä tarvitse olla kaikki toiminnallisuudet vaan niitä voi suorittaa script.js:stä. DOM-skriptaus on minulle täysin uusi väline joten olen oppinut paljon elementtien sekä tyylien muokkaamisesta sen avulla.
+- Haluaisin ymmärtää JavaScriptiä vielä paremmin, jotta voisin käyttää sitä yhtä sujuvasti kuin esimerkiksi Python ohjelmointikieltä.
+- Oma arvio projektista: **9/10 pistettä**
 
 ## Lähteet ja kiitokset
 
-Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
-Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
+Suurimpana lähteenä projektissa on toiminut aiemmin kurssilla esitellyt koodit, joita on myös hyödynnetty työpajatehtävien tekemisessä. 
 
 - [Lähteen tai tutoriaalin nimi](https://example.com/)
 - [Kuvalähde](https://example.com/)
+- Käytetty tekoälytyökalu: Gemini
+  - Miten työkalua käytettiin: Gemini tekoälyä on käytetty projektin virheiden ratkaisemisessa sekä html ja script.js tietojen vastaavuuden tarkastamisessa.
 - Käytetty tekoälytyökalu: Lucid AI
   - Miten työkalua käytettiin: Rautalankamallin luomisessa käytetty Lucid Chartin omaa Lucid AI:ta apuna.
--
-
+  
   ## Lisenssi
 
 Tämä projekti on lisensoitu MIT-lisenssillä.
